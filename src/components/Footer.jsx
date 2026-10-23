@@ -156,9 +156,17 @@ const Footer = () => {
               <Link
                 to="/contact"
                 className="group relative hover:text-white transition-colors duration-300"
+                aria-describedby="contact-us-tooltip"
               >
                 <span className="relative z-10">Contact Us</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -inset-2"></div>
+                <span
+                  id="contact-us-tooltip"
+                  role="tooltip"
+                  className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-56 px-3 py-2 rounded-lg bg-gray-800 border border-gray-600 text-xs text-gray-200 text-center shadow-lg opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300 z-20"
+                >
+                  Have a question or feedback? Send us a message and our team will get back to you.
+                </span>
               </Link>
             </div>
             <div className="text-center md:text-right">
